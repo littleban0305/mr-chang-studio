@@ -1,22 +1,16 @@
 .enter-btn{
 
-    margin-top:40px;
+    background:white;
 
-    padding:14px 32px;
+    color:#1F2937;
 
     border:none;
 
     border-radius:12px;
 
-    background:var(--primary);
+    padding:14px 32px;
 
-    color:white;
-
-    font-size:1rem;
-
-    cursor:pointer;
-
-    transition:.25s;
+    font-weight:600;
 }
 
 .enter-btn:hover{
