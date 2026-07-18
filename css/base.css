@@ -22,16 +22,19 @@ body{
 
 .hero{
     min-height:100vh;
-
     display:flex;
     flex-direction:column;
-
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     padding:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0ABAB5 0%,
+        #4DD6D1 100%
+    );
 }
 
 .hero h1{
