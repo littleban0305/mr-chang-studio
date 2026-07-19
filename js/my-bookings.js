@@ -3,9 +3,19 @@ localStorage.getItem(
     "bookingDate"
 );
 
+const bookingStatus =
+localStorage.getItem(
+    "bookingStatus"
+);
+
 const bookingDateText =
 document.getElementById(
     "bookingDate"
+);
+
+const bookingStatusText =
+document.getElementById(
+    "bookingStatus"
 );
 
 if(
@@ -15,6 +25,16 @@ if(
 
     bookingDateText.textContent =
     bookingDate;
+
+}
+
+if(
+    bookingStatus &&
+    bookingStatusText
+){
+
+    bookingStatusText.textContent =
+    bookingStatus;
 
 }
 
@@ -31,6 +51,10 @@ if(cancelBtn){
 
             localStorage.removeItem(
                 "bookingDate"
+            );
+
+            localStorage.removeItem(
+                "bookingStatus"
             );
 
             alert(
