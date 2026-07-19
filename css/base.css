@@ -2,7 +2,6 @@
     --primary:#0ABAB5;
     --background:#0ABAB5;
     --text:#1F2937;
-    --text:#1F2937;
     --white:#FFFFFF;
 }
 
@@ -13,59 +12,26 @@
 }
 
 body{
-    font-family:
-        "Noto Sans TC",
-        sans-serif;
+    font-family:"Noto Sans TC", sans-serif;
     background:var(--background);
     color:var(--text);
 }
 
 .hero{
     min-height:100vh;
+
     display:flex;
-    flex-direction:column;
-    justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:20px;
+    justify-content:space-between;
+
+    padding:80px;
+    gap:60px;
 
     background:
     linear-gradient(
         135deg,
         #0ABAB5 0%,
         #4DD6D1 100%
-    );
-}
-
-.hero h1{
-    color:white;
-    font-size:3rem;
-    font-weight:700;
-}
-
-.hero p{
-    color:rgba(255,255,255,.85);
-}
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    padding:80px;
-
-    gap:60px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #0ABAB5,
-        #4DD6D1
     );
 }
 
@@ -79,11 +45,17 @@ body{
 }
 
 .hero-right img{
-
     width:100%;
-
     max-width:600px;
-
     border-radius:24px;
+}
 
+.hero h1{
+    color:white;
+    font-size:3rem;
+    font-weight:700;
+}
+
+.hero p{
+    color:rgba(255,255,255,.85);
 }
