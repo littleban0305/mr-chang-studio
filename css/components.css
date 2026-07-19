@@ -774,21 +774,6 @@
 
 }
 
-.booking-card{
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:25px;
-
-    margin-bottom:25px;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,.08);
-
-}
-
 .booking-header{
 
     font-size:1.2rem;
