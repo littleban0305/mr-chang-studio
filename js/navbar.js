@@ -1,4 +1,4 @@
-const mobileMenu =
+const navMenu =
 document.getElementById(
     "mobileMenu"
 );
