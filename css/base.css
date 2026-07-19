@@ -60,31 +60,29 @@ body{
     0 20px 40px rgba(0,0,0,.15);
 }
 
+.hero h1{
+
+    color:white;
+
+    font-size:3rem;
+
+    line-height:1.1;
+
+    margin-top:15px;
+}
+
 @media (max-width:768px){
 
     .hero{
-        flex-direction:column;
-        text-align:center;
         padding:40px 25px;
-        gap:30px;
-    }
-
-    .hero-left,
-    .hero-right{
-        width:100%;
-    }
-
-    .hero h1{
-        font-size:4rem;
     }
 
     .hero-buttons{
         justify-content:center;
-        flex-wrap:wrap;
     }
 
-    .hero-right img{
-        max-width:350px;
+    .hero h1{
+        font-size:3rem;
     }
 
 }
