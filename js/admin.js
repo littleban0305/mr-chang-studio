@@ -20,7 +20,8 @@ document.getElementById(
 );
 
 if(
-    bookingDate
+    bookingDate &&
+    bookingDateText
 ){
 
     bookingDateText.textContent =
@@ -33,6 +34,21 @@ document.getElementById(
     "adminStatus"
 );
 
+const currentStatus =
+localStorage.getItem(
+    "bookingStatus"
+);
+
+if(
+    currentStatus &&
+    statusText
+){
+
+    statusText.textContent =
+    currentStatus;
+
+}
+
 document
 .getElementById(
     "confirmBtn"
@@ -43,6 +59,15 @@ document
 
         statusText.textContent =
         "已確認";
+
+        localStorage.setItem(
+            "bookingStatus",
+            "已確認"
+        );
+
+        alert(
+            "已確認預約"
+        );
 
     }
 );
@@ -58,6 +83,15 @@ document
         statusText.textContent =
         "候補中";
 
+        localStorage.setItem(
+            "bookingStatus",
+            "候補中"
+        );
+
+        alert(
+            "已轉入候補"
+        );
+
     }
 );
 
@@ -71,6 +105,15 @@ document
 
         statusText.textContent =
         "已取消";
+
+        localStorage.setItem(
+            "bookingStatus",
+            "已取消"
+        );
+
+        alert(
+            "已取消預約"
+        );
 
     }
 );
