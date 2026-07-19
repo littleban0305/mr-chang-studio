@@ -395,3 +395,29 @@
     }
 
 }
+
+/* ===== Logo ===== */
+
+.nav-logo{
+
+    height:45px;
+
+    width:auto;
+
+    display:block;
+
+}
+
+.brand-logo{
+
+    width:100%;
+
+    max-width:320px;
+
+    height:auto;
+
+    display:block;
+
+    margin:20px auto;
+
+}
