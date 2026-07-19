@@ -1011,3 +1011,106 @@
         0 6px 20px rgba(0,0,0,.08);
 
 }
+
+/* ===== Admin Login ===== */
+
+#adminPassword{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    margin-top:15px;
+
+}
+
+/* ===== Admin Panel ===== */
+
+.booking-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.05);
+
+}
+
+#confirmBtn,
+#waitingBtn,
+#cancelBtn{
+
+    width:220px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+#confirmBtn{
+
+    background:#0ABAB5;
+
+    color:white;
+
+    border:none;
+
+}
+
+#waitingBtn{
+
+    background:#F59E0B;
+
+    color:white;
+
+    border:none;
+
+}
+
+#cancelBtn{
+
+    background:#EF4444;
+
+    color:white;
+
+    border:none;
+
+}
+
+#confirmBtn:hover,
+#waitingBtn:hover,
+#cancelBtn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.admin-status{
+
+    font-weight:600;
+
+}
+
+.admin-page{
+
+    max-width:800px;
+
+    margin:120px auto 60px;
+
+    padding:20px;
+
+}
