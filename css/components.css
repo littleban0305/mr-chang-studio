@@ -136,10 +136,13 @@
 
     align-items:center;
 
-    background:
-    rgba(255,255,255,.15);
+    background:white;
 
-    backdrop-filter:blur(15px);
+    border-bottom:
+        1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+        0 2px 15px rgba(0,0,0,.06);
 
     z-index:1000;
 }
