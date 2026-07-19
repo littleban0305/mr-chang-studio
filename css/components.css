@@ -619,3 +619,111 @@
     line-height:1.8;
 
 }
+
+/* ===== 會員中心 ===== */
+
+.profile-page{
+
+    max-width:800px;
+
+    margin:120px auto 60px;
+
+    padding:20px;
+
+}
+
+.profile-page h1{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    color:#1F2937;
+
+}
+
+.profile-info{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.info-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    border-bottom:
+        1px solid #E5E7EB;
+
+}
+
+.info-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.info-label{
+
+    font-weight:600;
+
+    color:#6B7280;
+
+}
+
+.profile-menu{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.profile-link,
+.logout-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    text-decoration:none;
+
+    color:#1F2937;
+
+    font-size:1rem;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.logout-btn{
+
+    font-family:inherit;
+
+}
