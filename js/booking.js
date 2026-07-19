@@ -1,71 +1,18 @@
-const calendarDays =
-document.getElementById(
-    "calendarDays"
+const slotButtons =
+document.querySelectorAll(
+    ".slot-btn"
 );
 
-let selectedDate = null;
+let selectedSlot = null;
 
-const year = 2026;
-const month = 8;
-
-const firstDay =
-new Date(
-    year,
-    month - 1,
-    1
-).getDay();
-
-const totalDays =
-new Date(
-    year,
-    month,
-    0
-).getDate();
-
-for(
-    let i = 0;
-    i < firstDay;
-    i++
-){
-
-    const empty =
-    document.createElement(
-        "div"
-    );
-
-    calendarDays.appendChild(
-        empty
-    );
-
-}
-
-for(
-    let day = 1;
-    day <= totalDays;
-    day++
-){
-
-    const btn =
-    document.createElement(
-        "button"
-    );
-
-    btn.className =
-    "calendar-day";
-
-    btn.textContent =
-    day;
+slotButtons.forEach(btn => {
 
     btn.addEventListener(
         "click",
         ()=>{
 
-            document
-            .querySelectorAll(
-                ".calendar-day"
-            )
-            .forEach(
-                d => d.classList.remove(
+            slotButtons.forEach(
+                b => b.classList.remove(
                     "selected"
                 )
             );
@@ -74,17 +21,13 @@ for(
                 "selected"
             );
 
-            selectedDate =
-            `${year}/${month}/${day}`;
+            selectedSlot =
+            btn.textContent.trim();
 
         }
     );
 
-    calendarDays.appendChild(
-        btn
-    );
-
-}
+});
 
 const bookBtn =
 document.getElementById(
@@ -97,10 +40,10 @@ if(bookBtn){
         "click",
         ()=>{
 
-            if(!selectedDate){
+            if(!selectedSlot){
 
                 alert(
-                    "請先選擇日期"
+                    "請先選擇時段"
                 );
 
                 return;
@@ -109,7 +52,7 @@ if(bookBtn){
 
             localStorage.setItem(
                 "bookingDate",
-                selectedDate
+                selectedSlot
             );
 
             window.location.href =
