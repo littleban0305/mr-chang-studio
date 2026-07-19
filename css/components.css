@@ -886,3 +886,51 @@
     font-weight:700;
 
 }
+
+.slot-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin:25px 0;
+
+}
+
+.slot-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#F1F5F9;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.2s;
+
+}
+
+.slot-btn:hover{
+
+    background:#E2E8F0;
+
+}
+
+.slot-btn.selected{
+
+    background:#0ABAB5;
+
+    color:white;
+
+    font-weight:600;
+
+}
