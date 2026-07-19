@@ -42,11 +42,46 @@ for(
 
             selectedDate =
             `2026/08/${day}`;
+
         }
     );
 
     calendarDays.appendChild(
         btn
+    );
+
+}
+
+const bookBtn =
+document.getElementById(
+    "bookBtn"
+);
+
+if(bookBtn){
+
+    bookBtn.addEventListener(
+        "click",
+        ()=>{
+
+            if(!selectedDate){
+
+                alert(
+                    "請先選擇日期"
+                );
+
+                return;
+
+            }
+
+            localStorage.setItem(
+                "bookingDate",
+                selectedDate
+            );
+
+            window.location.href =
+            "my-bookings.html";
+
+        }
     );
 
 }
