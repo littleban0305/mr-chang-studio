@@ -55,9 +55,8 @@ if(bookBtn){
                 selectedDate
             );
 
-            alert(
-                "預約申請已送出"
-            );
+            window.location.href =
+            "my-bookings.html";
 
         }
     );
