@@ -18,53 +18,98 @@
 
 <body>
 
-    <main class="auth-page">
+    <nav class="navbar">
 
-        <div class="auth-card">
+        <img
+            src="assets/logo.png"
+            class="nav-logo"
+            alt="Mr. Chang">
 
-            <a
-                href="index.html"
-                class="back-home">
+        <button id="menuBtn">
+            ☰
+        </button>
 
-                ← 返回首頁
+    </nav>
 
-            </a>
+    <div
+        id="mobileMenu"
+        class="mobile-menu">
+    </div>
 
-            <img
-                src="assets/logo.png"
-                class="auth-logo"
-                alt="Mr. Chang">
+    <main class="profile-page">
 
-            <h1>會員中心</h1>
+        <a
+            href="index.html"
+            class="back-home">
 
-            <p id="memberName">
-                測試會員
-            </p>
+            ← 返回首頁
 
-            <div class="profile-actions">
+        </a>
 
-                <a
-                    href="#"
-                    class="primary-btn">
+        <h1>
+            會員中心
+        </h1>
 
-                    我的預約
+        <div class="profile-info">
 
-                </a>
+            <div class="info-item">
 
-                <button
-                    id="logoutBtn"
-                    class="secondary-btn">
+                <span class="info-label">
+                    會員名稱
+                </span>
 
-                    登出
+                <span id="memberName">
+                    測試會員
+                </span>
 
-                </button>
+            </div>
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    電子信箱
+                </span>
+
+                <span>
+                    test@gmail.com
+                </span>
 
             </div>
 
         </div>
 
+        <div class="profile-menu">
+
+            <a
+                href="booking.html"
+                class="profile-link">
+
+                📅 預約系統
+
+            </a>
+
+            <a
+                href="#"
+                class="profile-link">
+
+                📋 我的預約
+
+            </a>
+
+            <button
+                id="logoutBtn"
+                class="logout-btn">
+
+                🚪 登出
+
+            </button>
+
+        </div>
+
     </main>
 
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/profile.js"></script>
 
 </body>
