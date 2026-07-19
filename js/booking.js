@@ -5,9 +5,43 @@ document.getElementById(
 
 let selectedDate = null;
 
+const year = 2026;
+const month = 8;
+
+const firstDay =
+new Date(
+    year,
+    month - 1,
+    1
+).getDay();
+
+const totalDays =
+new Date(
+    year,
+    month,
+    0
+).getDate();
+
+for(
+    let i = 0;
+    i < firstDay;
+    i++
+){
+
+    const empty =
+    document.createElement(
+        "div"
+    );
+
+    calendarDays.appendChild(
+        empty
+    );
+
+}
+
 for(
     let day = 1;
-    day <= 31;
+    day <= totalDays;
     day++
 ){
 
@@ -41,7 +75,7 @@ for(
             );
 
             selectedDate =
-            `2026/08/${day}`;
+            `${year}/${month}/${day}`;
 
         }
     );
