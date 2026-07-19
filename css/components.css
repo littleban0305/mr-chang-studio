@@ -480,3 +480,38 @@
     margin:auto;
 
 }
+
+.location{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+    background:white;
+
+}
+
+.location h2{
+
+    margin-bottom:25px;
+
+    color:#1F2937;
+
+}
+
+#locationContent{
+
+    max-width:600px;
+
+    margin:auto;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#F8FAFC;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.05);
+
+}
