@@ -1,18 +1,37 @@
-const dateButtons =
-document.querySelectorAll(
-    ".date-btn"
+const calendarDays =
+document.getElementById(
+    "calendarDays"
 );
 
 let selectedDate = null;
 
-dateButtons.forEach(btn => {
+for(
+    let day = 1;
+    day <= 31;
+    day++
+){
+
+    const btn =
+    document.createElement(
+        "button"
+    );
+
+    btn.className =
+    "calendar-day";
+
+    btn.textContent =
+    day;
 
     btn.addEventListener(
         "click",
-        () => {
+        ()=>{
 
-            dateButtons.forEach(
-                b => b.classList.remove(
+            document
+            .querySelectorAll(
+                ".calendar-day"
+            )
+            .forEach(
+                d => d.classList.remove(
                     "selected"
                 )
             );
@@ -22,43 +41,12 @@ dateButtons.forEach(btn => {
             );
 
             selectedDate =
-            btn.textContent.trim();
-
+            `2026/08/${day}`;
         }
     );
 
-});
-
-const bookBtn =
-document.getElementById(
-    "bookBtn"
-);
-
-if(bookBtn){
-
-    bookBtn.addEventListener(
-        "click",
-        ()=>{
-
-            if(!selectedDate){
-
-                alert(
-                    "請先選擇日期"
-                );
-
-                return;
-
-            }
-
-            localStorage.setItem(
-                "bookingDate",
-                selectedDate
-            );
-
-            window.location.href =
-            "my-bookings.html";
-
-        }
+    calendarDays.appendChild(
+        btn
     );
 
 }
