@@ -89,7 +89,8 @@
 .primary-btn,
 .secondary-btn{
 
-    padding:14px 28px;
+    width:170px;
+    height:55px;
 
     border-radius:14px;
 
@@ -97,4 +98,18 @@
 
     font-weight:600;
 
+    border:none;
+
+    transition:.25s;
+}
+
+.description{
+
+    color:white;
+
+    opacity:.75;
+
+    margin-top:15px;
+
+    font-size:1rem;
 }
