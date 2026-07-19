@@ -994,3 +994,20 @@
     color:#4B5563;
 
 }
+
+.rules-image{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:block;
+
+    margin:30px auto 0;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,.08);
+
+}
