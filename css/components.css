@@ -727,3 +727,15 @@
     font-family:inherit;
 
 }
+
+.booking-notice{
+
+    margin:25px 0;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
