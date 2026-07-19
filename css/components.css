@@ -40,7 +40,7 @@
 
     color:white;
 
-    font-size:3rem;
+    font-size:2.7rem;
 
     line-height:1.1;
 
@@ -65,9 +65,29 @@
 
     flex-direction:column;
 
+    align-items:center;
+
     gap:15px;
 
     margin-top:30px;
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:220px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
 }
 
 .primary-btn{
@@ -76,6 +96,7 @@
 
     color:#111827;
 
+    border:none;
 }
 
 .secondary-btn{
@@ -85,24 +106,6 @@
     color:white;
 
     border:2px solid white;
-
-}
-
-.primary-btn,
-.secondary-btn{
-
-    width:170px;
-    height:55px;
-
-    border-radius:14px;
-
-    cursor:pointer;
-
-    font-weight:600;
-
-    border:none;
-
-    transition:.25s;
 }
 
 .description{
