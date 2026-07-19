@@ -36,29 +36,6 @@
 
 }
 
-.hero h1{
-
-    color:white;
-
-    font-size:2.7rem;
-
-    line-height:1.1;
-
-    margin-top:15px;
-}
-
-.subtitle{
-
-    color:white;
-
-    opacity:.9;
-
-    margin-top:10px;
-
-    font-size:1.3rem;
-
-}
-
 .hero-buttons{
 
     display:flex;
