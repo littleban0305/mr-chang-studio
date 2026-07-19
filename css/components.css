@@ -459,3 +459,24 @@
     margin-right:10px;
 
 }
+
+.profile-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.profile-actions .primary-btn,
+.profile-actions .secondary-btn{
+
+    width:220px;
+
+    margin:auto;
+
+}
