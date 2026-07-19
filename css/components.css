@@ -410,3 +410,16 @@
     margin:0 auto 25px;
 
 }
+
+.primary-btn,
+.secondary-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+}
