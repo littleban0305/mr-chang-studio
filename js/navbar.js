@@ -1,6 +1,6 @@
 const navMenu =
 document.getElementById(
-    "mobileMenu"
+    "navMenu"
 );
 
 const isLogin =
@@ -8,11 +8,11 @@ localStorage.getItem(
     "isLogin"
 );
 
-if(mobileMenu){
+if(navMenu){
 
     if(isLogin){
 
-        mobileMenu.innerHTML = `
+        navMenu.innerHTML = `
             <a href="index.html">
                 首頁
             </a>
@@ -28,7 +28,7 @@ if(mobileMenu){
 
     }else{
 
-        mobileMenu.innerHTML = `
+        navMenu.innerHTML = `
             <a href="index.html">
                 首頁
             </a>
