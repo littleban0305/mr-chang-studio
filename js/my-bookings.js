@@ -8,20 +8,13 @@ document.getElementById(
     "bookingDate"
 );
 
-const bookingRank =
-document.getElementById(
-    "bookingRank"
-);
-
-if(bookingDate){
+if(
+    bookingDate &&
+    bookingDateText
+){
 
     bookingDateText.textContent =
     bookingDate;
-
-    bookingRank.textContent =
-    Math.floor(
-        Math.random() * 5
-    ) + 1;
 
 }
 
@@ -30,19 +23,23 @@ document.getElementById(
     "cancelBookingBtn"
 );
 
-cancelBtn.addEventListener(
-    "click",
-    ()=>{
+if(cancelBtn){
 
-        localStorage.removeItem(
-            "bookingDate"
-        );
+    cancelBtn.addEventListener(
+        "click",
+        ()=>{
 
-        alert(
-            "預約已取消"
-        );
+            localStorage.removeItem(
+                "bookingDate"
+            );
 
-        location.reload();
+            alert(
+                "預約已取消"
+            );
 
-    }
-);
+            location.reload();
+
+        }
+    );
+
+}
