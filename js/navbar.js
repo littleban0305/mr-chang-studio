@@ -1,16 +1,16 @@
 const navMenu =
 document.getElementById(
-    "navMenu"
+    "mobileMenu"
 );
 
-const isLogin =
+const loginStatus =
 localStorage.getItem(
     "isLogin"
 );
 
 if(navMenu){
 
-    if(isLogin){
+    if(loginStatus){
 
         navMenu.innerHTML = `
             <a href="index.html">
