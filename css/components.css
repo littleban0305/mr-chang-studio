@@ -784,3 +784,99 @@
     margin-bottom:20px;
 
 }
+
+.calendar-card{
+
+    margin-top:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+.calendar-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.calendar-header button{
+
+    border:none;
+
+    background:none;
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+}
+
+.weekdays{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(7,1fr);
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.weekdays span{
+
+    text-align:center;
+
+}
+
+.calendar-days{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(7,1fr);
+
+    gap:8px;
+
+}
+
+.calendar-day{
+
+    height:45px;
+
+    border-radius:12px;
+
+    border:none;
+
+    background:#F1F5F9;
+
+    cursor:pointer;
+
+}
+
+.calendar-day:hover{
+
+    background:#E2E8F0;
+
+}
+
+.calendar-day.selected{
+
+    background:#0ABAB5;
+
+    color:white;
+
+    font-weight:700;
+
+}
