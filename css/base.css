@@ -46,3 +46,44 @@ body{
 .hero p{
     color:rgba(255,255,255,.85);
 }
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:80px;
+
+    gap:60px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0ABAB5,
+        #4DD6D1
+    );
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    text-align:center;
+}
+
+.hero-right img{
+
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:24px;
+
+}
