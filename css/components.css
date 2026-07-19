@@ -423,3 +423,25 @@
     text-decoration:none;
 
 }
+
+.back-home{
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    text-decoration:none;
+
+    color:#6B7280;
+
+    font-size:0.95rem;
+
+    transition:.2s;
+
+}
+
+.back-home:hover{
+
+    color:#0ABAB5;
+
+}
