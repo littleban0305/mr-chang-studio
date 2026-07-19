@@ -149,11 +149,12 @@
 
 .logo{
 
-    color:white;
+    color:#1F2937;
 
     font-size:1.3rem;
 
     font-weight:700;
+
 }
 
 #menuBtn{
@@ -162,11 +163,12 @@
 
     border:none;
 
-    color:white;
+    color:#1F2937;
 
     font-size:2rem;
 
     cursor:pointer;
+
 }
 
 .mobile-menu{
