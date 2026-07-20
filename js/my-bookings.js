@@ -108,3 +108,18 @@ if(
     );
 
 }
+
+const bookingNoteText =
+document.getElementById(
+    "bookingNote"
+);
+
+if(
+    bookingNote &&
+    bookingNoteText
+){
+
+    bookingNoteText.textContent =
+    bookingNote;
+
+}
