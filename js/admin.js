@@ -213,3 +213,67 @@ if(
     );
 
 }
+
+const addSlotBtn =
+document.getElementById(
+    "addSlotBtn"
+);
+
+if(addSlotBtn){
+
+    addSlotBtn.addEventListener(
+        "click",
+        ()=>{
+
+            const date =
+            document.getElementById(
+                "slotDate"
+            ).value;
+
+            const time =
+            document.getElementById(
+                "slotTime"
+            ).value;
+
+            if(
+                !date ||
+                !time
+            ){
+
+                alert(
+                    "請選擇日期與時間"
+                );
+
+                return;
+
+            }
+
+            const slot =
+            `${date} ${time}`;
+
+            const slots =
+            JSON.parse(
+                localStorage.getItem(
+                    "bookingSlots"
+                )
+            ) || [];
+
+            slots.push(
+                slot
+            );
+
+            localStorage.setItem(
+                "bookingSlots",
+                JSON.stringify(
+                    slots
+                )
+            );
+
+            alert(
+                "新增成功"
+            );
+
+        }
+    );
+
+}
