@@ -1,3 +1,63 @@
+const memberName =
+localStorage.getItem(
+    "memberName"
+);
+
+const memberPhone =
+localStorage.getItem(
+    "memberPhone"
+);
+
+const memberBirthday =
+localStorage.getItem(
+    "memberBirthday"
+);
+
+const adminName =
+document.getElementById(
+    "adminName"
+);
+
+const adminPhone =
+document.getElementById(
+    "adminPhone"
+);
+
+const adminBirthday =
+document.getElementById(
+    "adminBirthday"
+);
+
+if(
+    memberName &&
+    adminName
+){
+
+    adminName.textContent =
+    memberName;
+
+}
+
+if(
+    memberPhone &&
+    adminPhone
+){
+
+    adminPhone.textContent =
+    memberPhone;
+
+}
+
+if(
+    memberBirthday &&
+    adminBirthday
+){
+
+    adminBirthday.textContent =
+    memberBirthday;
+
+}
+
 if(
     !localStorage.getItem(
         "isAdmin"
