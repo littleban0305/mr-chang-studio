@@ -1,3 +1,8 @@
+const bookingCreatedAt =
+localStorage.getItem(
+    "bookingCreatedAt"
+);
+
 const bookingDate =
 localStorage.getItem(
     "bookingDate"
