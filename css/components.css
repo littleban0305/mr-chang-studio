@@ -1115,3 +1115,18 @@
     font-size:1rem;
 
 }
+
+#slotDate,
+#slotTime{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+}
