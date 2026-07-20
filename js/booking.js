@@ -60,7 +60,7 @@ if(bookBtn){
             
             localStorage.setItem(
                 "bookingCreatedAt",
-                now.getTime()
+                now.toISOString()
             );
             
             
