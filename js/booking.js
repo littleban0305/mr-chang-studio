@@ -50,9 +50,19 @@ if(bookBtn){
 
             }
 
+            const bookingNote =
+            document.getElementById(
+                "bookingNote"
+            ).value;
+
             localStorage.setItem(
                 "bookingDate",
                 selectedSlot
+            );
+
+            localStorage.setItem(
+                "bookingNote",
+                bookingNote
             );
 
             const now =
