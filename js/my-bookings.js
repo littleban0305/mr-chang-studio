@@ -1,3 +1,8 @@
+const bookingNote =
+localStorage.getItem(
+    "bookingNote"
+);
+
 const bookingCreatedAt =
 localStorage.getItem(
     "bookingCreatedAt"
