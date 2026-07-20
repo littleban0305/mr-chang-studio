@@ -277,3 +277,23 @@ if(addSlotBtn){
     );
 
 }
+
+const bookingNote =
+localStorage.getItem(
+    "bookingNote"
+);
+
+const adminBookingNote =
+document.getElementById(
+    "adminBookingNote"
+);
+
+if(
+    bookingNote &&
+    adminBookingNote
+){
+
+    adminBookingNote.textContent =
+    bookingNote;
+
+}
