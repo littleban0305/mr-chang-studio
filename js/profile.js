@@ -1,18 +1,82 @@
+const memberName =
+localStorage.getItem(
+    "memberName"
+);
+
+const memberPhone =
+localStorage.getItem(
+    "memberPhone"
+);
+
+const memberBirthday =
+localStorage.getItem(
+    "memberBirthday"
+);
+
+const nameText =
+document.getElementById(
+    "profileName"
+);
+
+const phoneText =
+document.getElementById(
+    "profilePhone"
+);
+
+const birthdayText =
+document.getElementById(
+    "profileBirthday"
+);
+
+if(
+    memberName &&
+    nameText
+){
+
+    nameText.textContent =
+    memberName;
+
+}
+
+if(
+    memberPhone &&
+    phoneText
+){
+
+    phoneText.textContent =
+    memberPhone;
+
+}
+
+if(
+    memberBirthday &&
+    birthdayText
+){
+
+    birthdayText.textContent =
+    memberBirthday;
+
+}
+
 const logoutBtn =
 document.getElementById(
     "logoutBtn"
 );
 
-logoutBtn.addEventListener(
-    "click",
-    () => {
+if(logoutBtn){
 
-        localStorage.removeItem(
-            "isLogin"
-        );
+    logoutBtn.addEventListener(
+        "click",
+        ()=>{
 
-        window.location.href =
-        "index.html";
+            localStorage.removeItem(
+                "isLogin"
+            );
 
-    }
-);
+            location.href =
+            "index.html";
+
+        }
+    );
+
+}
