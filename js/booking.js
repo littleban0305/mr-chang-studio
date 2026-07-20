@@ -55,6 +55,16 @@ if(bookBtn){
                 selectedSlot
             );
 
+            const now =
+            new Date();
+            
+            localStorage.setItem(
+                "bookingCreatedAt",
+                now.getTime()
+            );
+            
+            
+
             window.location.href =
             "my-bookings.html";
 
